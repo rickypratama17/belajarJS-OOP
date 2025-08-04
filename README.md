@@ -134,7 +134,7 @@ class Student extends Person{
     }
 }
 ```
-Encapsulation
+## Encapsulation
 Internal objek dijaga kerahasiaanya yang membuat objek tersebut hanya bisa diakses oleh metode milik objek itu sendiri, 
 dalam praktek ini saya mengimplementasikan pada password yang saya tambahkan pada Class Professor. 
 ```
@@ -183,7 +183,7 @@ student.introduce()
 
 console.log(prof.name+' sedang mengajar '+student.name + ' mata kuliah ' + prof.teaches)
 ```
-POLYMORPHISM
+## POLYMORPHISM
 -	Method Overriding
   menulis ulang method yang sudah didefinisikan seperti pada Class Professor dan Class Student
 ```
