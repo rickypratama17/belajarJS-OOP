@@ -194,5 +194,11 @@ console.log(prof.name+' sedang mengajar '+student.name + ' mata kuliah ' + prof.
 kemudian akan mengeluarkan hasil yakni
 <img width="1860" height="959" alt="image" src="https://github.com/user-attachments/assets/2cc6661c-181e-405a-a6aa-801d54844be7" />
 
+REFERENCE : 
+1. https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects/Object-oriented_programming
+2. https://www.geeksforgeeks.org/javascript/polymorphism-in-javascript/
+3. https://www.w3schools.com/js/js_class_inheritance.asp
+4. https://www.youtube.com/watch?v=CAFThg6XE-8
+
 
 
