@@ -23,10 +23,10 @@ class Person{
 	constructor(name: string, role: string){
 		this.name=name
 		this.role=role
-}
-introduceSelf(name:string){
-	console.log(`Hello ${name}, my name is ${this.name}`)
-}
+    }
+    introduceSelf(name:string){
+        console.log(`Hello ${name}, my name is ${this.name}`)
+    }
 }
 ```
 -	Setter/Getter juga bisa buat validasi input dengan cara diberikan if else pada setter/getter tersebut. Jika diimplementasikan di code menjadi
@@ -38,22 +38,23 @@ class Person{
 	constructor(name: string, role: string){
 		this._name=name
 		this.role=role
-}
-get name(): string{
-	if(this._name){
-		return this._name
-}else{
-	Return “empty”
-}
-}
-set name(value: string){
-if(value!==””){
-	this._name = value
-}
-}
-introduceSelf(name:string){
-	console.log(`Hello ${name}, my name is ${this.name}`)
-}
+    }
+        get name(): string{
+            if(this._name){
+                return this._name
+        }else{
+            Return “empty”
+        }
+    }
+
+    set name(value: string){
+        if(value!==””){
+            this._name = value
+        }
+    }
+    introduceSelf(name:string){
+            console.log(`Hello ${name}, my name is ${this.name}`)
+    }
 }
 ```
 -	Inheritance bertumpuk
@@ -64,13 +65,15 @@ class Employee{
 	
 	constructor(name: string){
 		this.name = name
-}
+    }
 }
 
 class Manager extends Employee{
 }
+
 class Director extends Manager{
 }
+
 const employee = new Employee(“Mamat”)
 console.log(employee.name)
 
@@ -86,19 +89,22 @@ Kita bisa membuat class yang mengikuti kontrak sebuah interface dengan cara meng
 Interface Hasname{
 	name: string
 }
+
 Interface CanSayHello{
 	sayHello(name:string): void
 }
+
 class Persons implement Hasname, CanSayHello{
 	name: string
-	constructor(){
-	this.name=name
-}
+        constructor(){
+        this.name=name
+    }
 
 sayHello(name: string): void{
-	console.log(`Hello ${name}, my name is ${this.name})
+        console.log(`Hello ${name}, my name is ${this.name})
+    }
 }
-}
+
 let pers = new Persons(“”)
 console.log(pers.name)
 pers.sayHello(“Yogi”)
@@ -111,11 +117,12 @@ pers.sayHello(“Yogi”)
 Pada JS penulisan objek bisa langsung ke constructor tanpa atribut seperti
 ```
 class Person{
-constructor(name,role){
-        		this.name=name
-        		this.role=role
+    constructor(name,role){
+        this.name=name
+        this.role=role
+    }
 }
-}
+
 ```
 Tetapi pada TypeScript property tersebut harus didefinisikan terlebih dahulu type datanya apa seperti name: string, jika diimplementasikan kecode menjadi
 ```
