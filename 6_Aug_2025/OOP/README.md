@@ -1,4 +1,4 @@
-TAMBAHAN PEMBELAJARAN OOP
+# TAMBAHAN PEMBELAJARAN OOP
 -	Class digunakan untuk membuat objek, class berisikan deklarasi semua properties dan function yang dimiliki oleh object
 -	Properti/atribut yang memiliki tandatanya(?) boleh tidak diisi, jika diimplementasikan ke code menjadi 
 ```
@@ -13,7 +13,7 @@ class Person{
 	}
 }
 ```
-Karena properti/attribute yang diconstructor . didalam constructor ditambahkan parameter supaya bisa dikirim dari luar ketika pembuatan object
+## Karena properti/attribute yang diconstructor . didalam constructor ditambahkan parameter supaya bisa dikirim dari luar ketika pembuatan object
 -	Method adalah function didalam class, jika diimplementasikan pada code yakni
 ```
 class Person{
