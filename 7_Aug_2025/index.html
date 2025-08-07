@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Brainy</title>
+</head>
+<body class="bg-gray-200 flex flex-row">
+    <!-- <div class="min-h-screen flex flex-col sm:justify-center items-center">
+        <form class=" flex flex-col bg-gray-400 p-4 w-xl rounded-lg" id="formRegis">
+            <h2>Register</h2>
+            <div class=" flex flex-col bg-gray-300 p-1  rounded-lg m-2">
+                <label for="name">Name</label>
+                <input class=" rounded-lg p-1 bg-gray-200" type="text" name="name" id="name">
+            </div>
+    
+            <div class=" flex flex-col bg-gray-300 p-1  rounded-lg m-2">
+                <label for="password">Password</label>
+                <input class=" rounded-lg p-1 bg-gray-200" type="text" name="password" id="password">
+            </div>
+    
+            <button class=" bg-gray-300 rounded-lg" type="submit">Regis</button>
+        </form>
+    </div> -->
+    <div class="flex h-[100%]">
+        <div class=" p-2 bg-gray-300 w-[300px] h-[300px] flex flex-col sm:justify-center items-center">
+            <h3>Ajukan Pertanyaan</h3>
+            <form id="formQuestion" class="flex flex-col w-[300px] p-2">
+                <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Your message..."></textarea>
+                <select id="course" class="bg-gray-50 rounded-sm p-1 m-1" name="cars" id="cars">
+                    <option value="Matematika">Matematika</option>
+                    <option value="IPA">IPA</option>
+                    <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+                    <option value="Bahasa Inggris">Bahasa Inggris</option>
+                </select>
+                <button id="submit" class="m-1 inline-flex items-center justify-center border align-middle select-none font-sans font-medium text-center duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:cursor-not-allowed focus:shadow-none text-sm py-2 px-4 shadow-sm hover:shadow-md bg-stone-800 hover:bg-stone-700 border-stone-900 text-stone-50 rounded-full transition antialiased">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class=" flex flex-col w-full ">
+        <div id="posts">
+        </div>
+    </div>
+    <script src="Question.js"></script>
+</body>
+</html>

@@ -27,9 +27,9 @@ function formValidation(){
     }
 }
 
-let data = []
 
 function acceptData () {
+    let data = []
     const user = new User(inputName.value, inputRole.value)
     data.push(user)
     localStorage.setItem("user",JSON.stringify(data))
