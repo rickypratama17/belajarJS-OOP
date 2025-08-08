@@ -4,10 +4,16 @@ Mini porject yang saya kerjakan ini terinspirasi dari brainly https://brainly.co
 img
 1. Register
 Pada fitur Register ini terdapat inputan yang membutuhkan credential nama dan password
-2. Login
+<img width="940" height="499" alt="image" src="https://github.com/user-attachments/assets/041e3fe1-4ce7-4e3b-a023-3132a9a49cad" />
+
+3. Login
 Pada fitur login ini, membutuhkan credential nama dan password, kemudian akan diredirect ke halaman utama
-3. Input Pertanyaan
+<img width="940" height="499" alt="image" src="https://github.com/user-attachments/assets/3a640344-a507-412a-acd1-78d7e6d5c83d" />
+
+5. Input Pertanyaan
 Pada page ini kita dapat menginputkan pertanyaan perihal matapelajaran, dalam contoh ini adalah pertanyaan mengenai matematika
+<img width="940" height="499" alt="image" src="https://github.com/user-attachments/assets/109fdeed-0d7f-4d36-9877-31a0956b35d7" />
+
 
 pada Mini Project kali ini terdapat 2 JS untuk menangani Mini Project kali ini, sebenarnya masih bisa digabungkan juga.
 pada file Model.js digunakan untuk autentikasi signUp dan SignIn, pada file tersebut terdapa model User yang digunakan untuk penstrukturan data user
