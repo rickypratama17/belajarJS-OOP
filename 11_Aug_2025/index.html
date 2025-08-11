@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fruit OOP Demo</title>
+    <style>
+        table { border-collapse: collapse; width: 80%; margin: 20px auto; }
+        th, td { border: 1px solid #aaa; padding: 8px 12px; text-align: left; }
+        th { background: #f0f0f0; }
+        caption { font-size: 1.5em; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <table id="fruitTable">
+        <caption>Fruit Data (OOP)</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Weight (gr)</th>
+                <th>Color</th>
+                <th>Extra Info</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be inserted here by JS -->
+        </tbody>
+    </table>
+    <script src="OOP.js"></script>
+    <script>
+        // Data from OOP.js
+        const fruits = [
+            plums,
+            grapes,
+            pomes,
+            hesperidia,
+            wMRed,
+            legumes
+        ];
+
+        function getExtraInfo(fruit) {
+            if (fruit.weightSeed) return `Weight Per Seed: ${fruit.weightSeed}gr`;
+            if (fruit.totalSeed) return `Total Seed: ${fruit.totalSeed}`;
+            if (fruit.skinThickness && fruit.fleshColor)
+                return `Skin Thickness: ${fruit.skinThickness} cm, Flesh Color: ${fruit.fleshColor}`;
+            if (fruit.skinThickness) return `Skin Thickness: ${fruit.skinThickness} cm`;
+            if (fruit.seedInPolong) return `Total Seed Per Polong: ${fruit.seedInPolong}`;
+            return "-";
+        }
+
+        const tbody = document.querySelector("#fruitTable tbody");
+        fruits.forEach(fruit => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+                <td>${fruit.name}</td>
+                <td>${fruit.weight}</td>
+                <td>${fruit.color}</td>
+                <td>${getExtraInfo(fruit)}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+    </script>
+</body>
+</html>
